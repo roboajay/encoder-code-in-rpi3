@@ -1,0 +1,13 @@
+  int MSB_left = digitalRead(RoAPin); //MSB = most significant bit
+  int LSB_left = digitalRead(RoBPin); //LSB = least significant bit
+ 
+  int encoded_left = (MSB_left << 1) |LSB_left; //converting the 2 pin value to single number
+  int sum_left  = (lastEncoded_left << 2) | encoded_left; //adding it to the previous encoded value
+  
+  if(sum_left == 0b1101 || sum_left == 0b0100 || sum_left == 0b0010 || sum_left == 0b1011) globalCounter ++;
+  if(sum_left == 0b1110 || sum_left == 0b0111 || sum_left == 0b0001 || sum_left == 0b1000) globalCounter --;
+    
+  lastEncoded_left = encoded_left;
+  //store this value for next time
+  
+  
