@@ -7,4 +7,4 @@ for controlling dc motor with mdds30 (motor sheild) follow this: https://tutoria
 the main problem i faced was:
 the encoder we used gives actually 14k counts per revolution but while tetstsing the sensor gave 12k counts per revolution.
 
-this issue has to addressed. (may be the problem is with sensor being physically damaged)
+this issue has to addressed. (may be the problem is with sensor being physically damaged, idk why it happened..!)
